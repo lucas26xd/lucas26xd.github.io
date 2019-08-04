@@ -45,11 +45,6 @@
                     <a class="nav-link" href="#contact">Contact </a>
                 </li>
             </ul>
-            <!--
-                <form class="form-inline my-2 my-md-0">
-                    <input class="form-control" type="text" placeholder="Search">
-                </form>
-            -->
         </div>
     </nav>
     
@@ -226,6 +221,7 @@
     <!--Bootstrap JavaScript-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
     <script>
         $("div.shadow").hide()
         
@@ -235,6 +231,7 @@
                 this.className += " active" // Active the menu item
             });
         });
+        
         var time = 600
         $("div.shadow").first().show(time, function showNext() { //Show divs
             time -= 100
@@ -269,8 +266,7 @@
             data: {visibility: 'public', sort: 'pushed'},
             dataType: 'json'
         }).done(function(response) {
-            //Many thanks to https://github.com/ozh/github-colors
-            $.getJSON('https://raw.githubusercontent.com/ozh/github-colors/master/colors.json', function(lang_colors){
+            $.getJSON('https://raw.githubusercontent.com/ozh/github-colors/master/colors.json', function(lang_colors){ //Many thanks to https://github.com/ozh/github-colors
                 response.forEach(repo => {
                     $('#repositories').append(`<div class="text-left bg-light p-1">
                         <h4><a style="font-size: 1.1rem;" href="${repo.html_url}">
@@ -281,6 +277,15 @@
                     })
                 })
             })
+            
+            document.addEventListener('touchleave', hideNavBAr)
+            document.addEventListener('click', hideNavBAr)
+            
+            function hideNavBAr() { // Hide the mebu bar
+                if(!$('.navbar-toggler').hasClass('collapsed')){
+                    $('.navbar-collapse').collapse('hide')
+                }
+            }
         </script>
     </body>
     </html>
