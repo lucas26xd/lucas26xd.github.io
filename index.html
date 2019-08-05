@@ -30,19 +30,19 @@
         <div class="navbar-collapse collapse" id="navbar">
             <ul class="navbar-nav mr-auto">
                 <li id="nav-item-0" class="nav-item active">
-                    <a class="nav-link" href="#">Home </a>
+                    <a title="Home" class="nav-link" href="#">Home </a>
                 </li>
                 <li id="nav-item-1" class="nav-item">
-                    <a class="nav-link" href="#education">Education </a>
+                    <a title="Education" class="nav-link" href="#education">Education </a>
                 </li>
                 <li id="nav-item-2" class="nav-item">
-                    <a class="nav-link" href="#interesting">Interesting </a>
+                    <a title="Interesting" class="nav-link" href="#interesting">Interesting </a>
                 </li>
                 <li id="nav-item-3" class="nav-item">
-                    <a class="nav-link" href="#repositories">Repositories </a>
+                    <a title="Repositories" class="nav-link" href="#repositories">Repositories </a>
                 </li>
                 <li id="nav-item-4" class="nav-item">
-                    <a class="nav-link" href="#contact">Contact </a>
+                    <a title="Contact" class="nav-link" href="#contact">Contact </a>
                 </li>
             </ul>
         </div>
@@ -167,15 +167,15 @@
                         <input type="hidden" name="_subject" value="Mensagem enviada pelo site">
                         <div class="form-group  text-left">
                             <label for="email">Email address</label>
-                            <input type="email" name="_replyto" class="form-control" id="email" placeholder="Enter email" required>
+                            <input title="Your email" type="email" name="_replyto" class="form-control" id="email" placeholder="Enter email" required>
                         </div>
                         <div class="form-group text-left">
                             <label for="message">Message</label>
-                            <textarea name="message" class="form-control" id="message" rows="3" placeholder="Your message" aria-describedby="emailMsg" required></textarea>
+                            <textarea title="Message" name="message" class="form-control" id="message" rows="3" placeholder="Your message" aria-describedby="emailMsg" required></textarea>
                             <small id="emailMsg" class="form-text text-secondary">I am using Formspree email server, captcha verification is required.</small>
                         </div>
                         <div class="form-group text-right">
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button title="Submit" type="submit" class="btn btn-primary">Submit</button>
                         </div>
                     </form>
                 </div>
@@ -214,7 +214,7 @@
         </div>
     </div>
     
-    <footer class="text-center text-secondary">&copy; Lucas Costa Santos. <span id="ano"></span>. Find the code of this page <a href="https://github.com/lucas26xd/lucas26xd.github.io">here</a>.</footer>
+    <footer class="text-center text-secondary">&copy; Lucas Costa Santos. <span id="ano"></span>. Find the code of this page <a title="Repo" href="https://github.com/lucas26xd/lucas26xd.github.io">here</a>.</footer>
     
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -269,7 +269,7 @@
             $.getJSON('https://raw.githubusercontent.com/ozh/github-colors/master/colors.json', function(lang_colors){ //Many thanks to https://github.com/ozh/github-colors
                 response.forEach(repo => {
                     $('#repositories').append(`<div class="text-left bg-light p-1">
-                        <h4><a style="font-size: 1.1rem;" href="${repo.html_url}">
+                        <h4><a title="Pushed at ${new Date(repo.pushed_at).toLocaleDateString('en-US', {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'})}" style="font-size: 1.1rem;" href="${repo.html_url}">
                             <img class="mr-1" src="https://octicons.github.com/favicon.ico" alt="" width="20px"> lucas26xd / <strong>${repo.name}</strong></a></h4>
                             <p class="text-secondary">${repo.description}</p>
                             <p class="text-secondary" style="font-size: 0.8rem;"><span style="background-color: ${lang_colors[repo.language].color}; border-radius:50%; display:inline-block; height:12px; position:relative; top:1px; width:12px"></span> ${repo.language}</p>
