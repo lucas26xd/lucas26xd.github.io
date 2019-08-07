@@ -12,4 +12,6 @@ The code runs entirely in the client browser (frontend), uses only HTML, CSS and
 
 * I use the Github API to search my repositories and list them on the page, this process is fully automatic via JS.
 
-* I used the JSON found [here](https://github.com/ozh/github-colors) to get the default language colors from github, thanks a lot man (https://github.com/ozh)!
+* I used the JSON found [here](https://github.com/ozh/github-colors) to get the default language colors from github, thanks a lot man (https://github.com/ozh)!  
+
+## Visit the page [here](https://lucas26xd.github.io/).
