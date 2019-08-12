@@ -48,7 +48,11 @@
         </div>
     </nav>
     
-    <div title="Resume" id="profile" class="mt-5 m-2 shadow p-3 bg-white rounded text-center">
+    <div title="Weather" id="weather" class="mt-5 pt-2 pl-3 bg-info text-white">
+        <h5>🌤 Allow to get your geolocation to get the weather forecast.</h5>
+    </div>
+
+    <div title="Resume" id="profile" class="m-2 shadow p-3 bg-white rounded text-center">
         <img id="photo" src="https://avatars3.githubusercontent.com/u/30278115" class="rounded-circle" alt="Foto de Perfil" style="max-width: 200px;">
         <h1>Lucas Costa Santos</h1>
         <p class="text-secondary">Share your knowledge with others.</p>
@@ -224,6 +228,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     
     <script>
+        getLocation() //Requests user geolocation
+
         $("div.shadow").hide()
         
         $.getJSON('https://api.github.com/users/lucas26xd', res => {$('#photo').attr('src', res.avatar_url)}) // Get the avatar in GitHub
@@ -271,19 +277,81 @@
                             <img class="mr-1" src="https://octicons.github.com/favicon.ico" alt="" width="20px"> lucas26xd / <strong>${repo.name}</strong></a></h4>
                             <p class="text-secondary">${repo.description}</p>
                             <p class="text-secondary" style="font-size: 0.8rem;"><span style="background-color: ${lang_colors[repo.language].color}; border-radius:50%; display:inline-block; height:12px; position:relative; top:1px; width:12px"></span> ${repo.language}</p>
-                        </div>`)
-                    })
+                        </div>`
+                    )
                 })
             })
+        })
             
-            document.addEventListener('touchleave', hideNavBAr)
-            document.addEventListener('click', hideNavBAr)
-            
-            function hideNavBAr() { // Hide the mebu bar
-                if(!$('.navbar-toggler').hasClass('collapsed')){
-                    $('.navbar-collapse').collapse('hide')
-                }
+        document.addEventListener('touchleave', hideNavBAr)
+        document.addEventListener('click', hideNavBAr)
+        
+        function hideNavBAr() { // Hide the mebu bar
+            if(!$('.navbar-toggler').hasClass('collapsed')){
+                $('.navbar-collapse').collapse('hide')
             }
+        }
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition, showError)
+            } else {
+                $('#weather').text('Your browser does not support Geolocation.')
+                removeWeather()
+            }
+        }
+
+        function removeWeather() {
+            $('#weather').removeClass('bg-info')
+            $('#weather').addClass('bg-danger')
+            setTimeout(() => {
+                $('#weather').remove()
+                $('#profile').addClass('mt-5')
+            }, 3000)
+        }
+
+        function showPosition(position) {
+            $.ajax(`http://servicos.cptec.inpe.br/XML/cidade/7dias/${position.coords.latitude}/${position.coords.longitude}/previsaoLatLon.xml`, {dataType: 'xml'}).done(xml => {
+                xml = $(xml).find('cidade')
+                const cid = xml.find('nome').text()
+                const uf = xml.find('uf').text()
+                const previsao = $(xml.find('previsao')[0])
+                const dia = new Date(previsao.find('dia').text()).toLocaleDateString('en-US', {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'})
+                const max = previsao.find('maxima').text()
+                const min = previsao.find('minima').text()
+                var tempo = {'ec': '🌦 Encoberto com Chuvas Isoladas', 'ci': '☔️ Chuvas Isoladas', 'c': '🌧 Chuva', 'in': '☁️ Instável', 'pp': '☔️ Possibilidade de Pancadas de Chuva', 'cm': '☔️ Chuva pela Manhã', 
+                            'cn': '☔️ Chuva à Noite', 'pt': '⛅️ Pancadas de Chuva à Tarde', 'pm': '⛅️ Pancadas de Chuva pela Manhã', 'np': '🌦 Nublado e Pancadas de Chuva', 'pc': '⛈ Pancadas de Chuva', 
+                            'pn': '⛅️ Parcialmente Nublado', 'cv': '☔️ Chuvisco', 'ch': '🌧 Chuvoso', 't': '🌧⚡️ Tempestade', 'ps': '☀️ Predomínio de Sol', 'e': '⛅️ Encoberto', 'n': '⛅️ Nublado', 'cl': '☀️ Céu Claro', 
+                            'nv': '🌨 Nevoeiro', 'g': '🌨 Geada', 'ne': '❄️ Neve', 'nd': '🚫 Não Definido', 'pnt': '⛈ Pancadas de Chuva à Noite', 'psc': '🌦 Possibilidade de Chuva', 'pcm': '🌦 Possibilidade de Chuva pela Manhã', 
+                            'pct': '🌦 Possibilidade de Chuva à Tarde', 'pcn': '🌧 Possibilidade de Chuva à Noite', 'npt': '🌦 Nublado com Pancadas à Tarde', 'npn': '🌦 Nublado com Pancadas à Noite','ncn': '🌧 Nublado com Possibilidade de Chuva à Noite', 
+                            'nct': '🌦 Nublado com Possibilidade de Chuva à Tarde', 'ncm': '🌦 Nublado com Possibilidade de Chuva pela Manhã', 'npm': '🌦 Nublado com Pancadas de Chuva pela Manhã', 'npp': '🌦 Nublado com Possibilidade de Chuva', 
+                            'vn': '☁️ Variação de Nebulosidade', 'ct': '🌦 Chuva à Tarde', 'ppn': '🌧 Possibilidade de Pancadas de Chuva à Noite', 'ppt': '🌦 Possibilidade de Pancadas de Chuva à Tarde', 'ppm': '🌦 Possibilidade de Pancadas de Chuva pela Manhã'}
+                tempo = tempo[previsao.find('tempo').text()]
+                    $('#weather').html(`${cid} - ${uf}, <strong>${tempo}</strong>, 🔴${max}ºC 🔵${min}ºC`)
+                    $('#weather').attr('title', `🔄${dia}`)
+            })
+        }
+
+        function showError(error) {
+            switch(error.code) {
+                case error.PERMISSION_DENIED:
+                    $('#weather').text('Geolocation request rejection.')
+                    removeWeather()
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    $('#weather').text('Location unavailable.')
+                    removeWeather()
+                    break;
+                case error.TIMEOUT:
+                    $('#weather').text('The request has timed out.')
+                    removeWeather()
+                    break;
+                case error.UNKNOWN_ERROR:
+                    $('#weather').text('Some unknown error has happened.')
+                    removeWeather()
+                    break;
+            }
+        }
     </script>
 </body>
 </html>
