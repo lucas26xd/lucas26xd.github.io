@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
     <meta name="author" content="Lucas Santos">
     <meta name="generator" content="VS Code">
     <meta name="description" content="Portfólio de Lucas Santos">
@@ -312,6 +311,8 @@
         }
 
         function showPosition(position) {
+            $('#weather').addClass('d-none')
+            $('#profile').addClass('mt-5')
             $.ajax(`http://servicos.cptec.inpe.br/XML/cidade/7dias/${position.coords.latitude}/${position.coords.longitude}/previsaoLatLon.xml`, {dataType: 'xml'}).done(xml => {
                 xml = $(xml).find('cidade')
                 const cid = xml.find('nome').text()
@@ -330,6 +331,8 @@
                 tempo = tempo[previsao.find('tempo').text()]
                     $('#weather').html(`${cid} - ${uf}, <strong>${tempo}</strong>, 🔴${max}ºC 🔵${min}ºC`)
                     $('#weather').attr('title', `🔄${dia}`)
+                    $('#weather').removeClass('d-none')
+                    $('#profile').removeClass('mt-5')
             })
         }
 
