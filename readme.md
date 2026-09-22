@@ -1,19 +1,18 @@
-# Overview
-The code runs entirely in the client browser (frontend), uses only HTML, CSS and JS.
+# Lucas Santos — portfólio
 
-> There is only one file ([index.html](https://github.com/lucas26xd/lucas26xd.github.io/blob/master/index.html)) where all the code is found, I tried to indent and comment whenever possible, and all images on the site are taken by URL.
+Portfólio profissional publicado em [lucas26xd.github.io](https://lucas26xd.github.io/).
 
-# Thanks
-* I use Material Icons for contact icons at the bottom of the page.
+## Recursos
 
-* I use Bootstrap for an improved and responsive look and its ease of use.
+- Layout responsivo com seções de apresentação, experiência, formação, certificações e contato.
+- Tema claro/escuro com preferência salva no navegador.
+- Navegação acessível por teclado, link para pular ao conteúdo e suporte a movimento reduzido.
+- Projetos públicos carregados pela API do GitHub, com tratamento de erro e fallback para o perfil.
+- Metadados Open Graph e dados estruturados `Person` para melhorar compartilhamentos e SEO.
+- Formulário de contato usando Formspree.
 
-* I used the Formspree email server for its ease of use and fast email delivery.
+## Desenvolvimento
 
-* I use the Github API to search my repositories and list them on the page, this process is fully automatic via JS.
+A página roda inteiramente no navegador e não exige instalação ou etapa de build. Para testar localmente, abra `index.html` em um navegador ou sirva a pasta com qualquer servidor HTTP estático.
 
-* I used the CPTEC/INPE weather API which can be found [here](http://servicos.cptec.inpe.br/XML/). This API is very interesting and simple! Thank you!
-
-* I used the JSON found [here](https://github.com/ozh/github-colors) to get the default language colors from github, thanks a lot man (https://github.com/ozh)!  
-
-## Visit the page [here](https://lucas26xd.github.io/).
+O conteúdo principal está em `index.html`, usando HTML semântico, CSS nativo e JavaScript nativo.

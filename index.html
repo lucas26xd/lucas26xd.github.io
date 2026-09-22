@@ -1,397 +1,60 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="author" content="Lucas Santos">
-    <meta name="generator" content="VS Code">
-    <meta name="description" content="Portfólio de Lucas Santos">
-    <meta name="keywords" content="HTML, CSS, JS">
-    <link rel="icon" type="image/x-icon" class="favicon" href="//em-content.zobj.net/thumbs/160/apple/81/male-technologist-type-1-2_1f468-1f3fb-200d-1f4bb.png">
-    <title>Lucas Santos</title>
-    <!--Material Icons-->
-    <link rel="stylesheet" href="//cdn.materialdesignicons.com/3.6.95/css/materialdesignicons.min.css"/>
-    <!--Bootstrap CSS-->
-    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    
-    <style>
-        .mdi-contacts { /*Contact Buttons*/
-            background: #000;
-            font-size: 2rem;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#102a43">
+<meta name="author" content="Lucas Costa Santos">
+<meta name="description" content="Portfólio profissional de Lucas Costa Santos, engenheiro de computação e desenvolvedor de soluções com SAP, Python e Java.">
+<meta property="og:title" content="Lucas Costa Santos | SAP, Python e Java">
+<meta property="og:description" content="Experiência em desenvolvimento SAP, Python, Java, dados e automação.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lucas26xd.github.io/">
+<title>Lucas Costa Santos | SAP, Python e Java</title>
+<link rel="icon" href="https://github.com/lucas26xd.png?size=64" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Lucas Costa Santos","url":"https://lucas26xd.github.io/","jobTitle":"Desenvolvedor SAP ABAP","sameAs":["https://github.com/lucas26xd","https://linkedin.com/in/lucas26xd/"]}</script>
+<style>
+:root{color-scheme:light;--ink:#102a43;--muted:#52606d;--paper:#f5f7f8;--surface:#fff;--line:#d9e2ec;--accent:#d85b3f;--highlight:#f6c453;--shadow:0 18px 45px #102a431a}
+[data-theme=dark]{color-scheme:dark;--ink:#e9f1f7;--muted:#a9b8c5;--paper:#0d1b2a;--surface:#142b3d;--line:#2b4558;--accent:#f08368;--highlight:#f6c453;--shadow:0 18px 45px #00000038}
+*{box-sizing:border-box}html{scroll-behavior:smooth;overflow-x:clip}body{margin:0;overflow-x:clip;color:var(--ink);background:var(--paper);font:400 1rem/1.65 "DM Sans",sans-serif}body:before{content:"";position:fixed;inset:0 0 auto;height:5px;z-index:10;background:linear-gradient(90deg,var(--accent),var(--highlight),#3f8f89)}a{color:inherit}a:focus-visible,button:focus-visible{outline:3px solid var(--highlight);outline-offset:4px}.skip{position:absolute;left:1rem;top:-5rem;z-index:20;padding:.6rem 1rem;background:var(--ink);color:var(--paper)}.skip:focus{top:1rem}.shell{width:min(1120px,calc(100% - 2.5rem));margin:auto}.header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav{display:flex;align-items:center;justify-content:space-between;min-height:72px;gap:1rem}.brand{font:700 1.15rem "Space Grotesk";text-decoration:none}.brand b{color:var(--accent)}.toggle,.theme{border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}.toggle{display:none;padding:.6rem .8rem;font-size:1.2rem}.theme{padding:.5rem .75rem;border-radius:999px}.links{display:flex;gap:1.3rem;margin:0;padding:0;list-style:none}.links a{color:var(--muted);font-size:.9rem;text-decoration:none}.links a:hover,.links a.active{color:var(--accent)}.hero{position:relative;overflow:hidden;padding:7rem 0 6rem}.hero:after{content:"";position:absolute;width:280px;height:280px;right:-100px;top:60px;border:32px solid var(--highlight);opacity:.45;transform:rotate(18deg)}.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.3fr .7fr;align-items:center;gap:5rem}.eyebrow{margin:0 0 1.1rem;color:var(--accent);font:700 .78rem "Space Grotesk";letter-spacing:.14em;text-transform:uppercase}h1,h2,h3{margin:0;font-family:"Space Grotesk";line-height:1.1}h1{max-width:760px;font-size:clamp(2.8rem,7vw,5.8rem)}h1 em{color:var(--accent);font-style:normal}.hero-copy{max-width:650px;margin:1.5rem 0 0;color:var(--muted);font-size:1.12rem}.actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem}.button{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;padding:.8rem 1rem;border:1px solid var(--ink);background:var(--ink);color:var(--paper);font-weight:700;text-decoration:none;cursor:pointer}.button:hover{background:var(--accent);border-color:var(--accent)}.button.alt{background:transparent;color:var(--ink);border-color:var(--line)}.profile{padding:1.3rem;background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow);transform:rotate(2deg)}.profile img{display:block;width:100%;aspect-ratio:1;object-fit:cover;filter:saturate(.85)}.profile figcaption{display:flex;justify-content:space-between;gap:1rem;padding-top:1rem;color:var(--muted);font-size:.85rem}.section{padding:5.5rem 0;border-top:1px solid var(--line)}.heading{display:flex;align-items:end;justify-content:space-between;gap:2rem;margin-bottom:2.2rem}.heading h2{font-size:clamp(2rem,4vw,3.2rem)}.heading p{max-width:420px;margin:0;color:var(--muted)}.about,.contact{display:grid;grid-template-columns:1fr 1fr;gap:2rem}.about-copy{max-width:680px;margin:0;color:var(--muted);font-size:1.08rem}.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}.stat{padding:1.3rem;background:var(--surface);border-left:4px solid var(--accent)}.stat strong{display:block;font:700 2rem "Space Grotesk"}.stat span{color:var(--muted);font-size:.9rem}.skills{display:flex;flex-wrap:wrap;gap:.65rem;margin-top:2rem}.skill{padding:.5rem .75rem;border:1px solid var(--line);background:var(--surface);font:600 .85rem "Space Grotesk"}.timeline{display:grid;gap:1rem}.timeline-item{display:grid;grid-template-columns:150px 1fr;gap:2rem;padding:1.35rem 0;border-bottom:1px solid var(--line)}.year{color:var(--accent);font:700 .9rem "Space Grotesk"}.timeline-item h3{font-size:1.25rem}.timeline-item p{margin:.4rem 0 0;color:var(--muted)}.certs,.repos{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.cert,.repo{padding:1.25rem;background:var(--surface);border:1px solid var(--line)}.cert time{color:var(--accent);font:700 .8rem "Space Grotesk"}.cert h3{margin-top:.45rem;font-size:1rem}.cert p,.repo p{margin:.35rem 0 0;color:var(--muted);font-size:.9rem}.repo{display:flex;min-height:210px;flex-direction:column;justify-content:space-between;transition:transform .2s,border-color .2s}.repo:hover{border-color:var(--accent);transform:translateY(-4px)}.repo h3{font-size:1.15rem;overflow-wrap:anywhere}.repo h3 a{text-decoration:none}.repo-meta{display:flex;justify-content:space-between;color:var(--muted);font-size:.8rem}.language:before{content:"";display:inline-block;width:.65rem;height:.65rem;margin-right:.35rem;border-radius:50%;background:var(--language-color,var(--accent))}.status{grid-column:1/-1;color:var(--muted)}.contact-panel{padding:2rem;background:var(--ink);color:var(--paper)}.contact-panel p{color:color-mix(in srgb,var(--paper) 75%,transparent)}.contact-links{display:grid;gap:.8rem;margin-top:1.5rem}.contact-links a{color:var(--paper);text-decoration:none}.contact-links a:hover{color:var(--highlight)}.form{display:grid;gap:1rem}label{display:grid;gap:.4rem;font-weight:700}input,textarea{width:100%;padding:.8rem;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:inherit}textarea{min-height:140px;resize:vertical}footer{padding:2rem 0 3rem;color:var(--muted);font-size:.85rem}footer a{color:var(--accent)}.reveal{animation:rise .65s both}@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:800px){.toggle{display:inline-flex}.links{display:none;position:absolute;top:72px;left:0;right:0;flex-direction:column;gap:0;padding:.75rem 1.25rem 1rem;background:var(--surface);border-bottom:1px solid var(--line)}.links.open{display:flex}.links a{display:block;padding:.65rem 0}.hero{padding:5rem 0 4rem}.hero-grid,.about,.contact{grid-template-columns:1fr;gap:2rem}h1{font-size:clamp(2.35rem,8vw,4.4rem)}.hero-copy{font-size:1rem}.profile{width:min(260px,75%);margin:auto}.repos{grid-template-columns:1fr 1fr}}
+@media(max-width:800px){.hero .profile{display:none}}
+@media(max-width:560px){.shell{width:calc(100% - 1.5rem)}.nav{min-height:64px}.theme span{display:none}.section{padding:4rem 0}.heading{display:block}.heading p{margin-top:.8rem}.timeline-item{grid-template-columns:1fr;gap:.3rem}.certs,.repos,.stats{grid-template-columns:1fr}.actions .button{width:100%}.hero h1{font-size:clamp(2rem,9.5vw,3rem);line-height:1.08}.hero-copy{font-size:.95rem}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+/* Compact section rhythm */
+.section { padding-top: 3rem; }
+@media (max-width: 560px) { .section { padding-top: 2rem; } }
+/* Bring the first content block closer to the navigation. */
+.hero { padding-top: 2rem; }
+@media (max-width: 800px) { .hero { padding-top: 1rem; } }
+</style>
 </head>
 <body>
-    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>        
-        <div class="navbar-collapse collapse" id="navbar">
-            <ul class="navbar-nav mr-auto">
-                <li id="nav-item-0" class="nav-item active">
-                    <a title="Home" class="nav-link" href="#">Resumo </a>
-                </li>
-                <li id="nav-item-1" class="nav-item">
-                    <a title="Education" class="nav-link" href="#education">Formação </a>
-                </li>
-                <li id="nav-item-2" class="nav-item">
-                    <a title="Interesting" class="nav-link" href="#interesting">Interesses </a>
-                </li>
-                <li id="nav-item-3" class="nav-item">
-                    <a title="Repositories" class="nav-link" href="#repositories">Repositórios </a>
-                </li>
-                <li id="nav-item-4" class="nav-item">
-                    <a title="Contact" class="nav-link" href="#contact">Contato </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    
-    <div title="Weather" id="weather" class="mt-5 pt-2 pl-3 d-flex flex-row bg-info text-white">
-        <h5>🌤 Permita obter sua geolocalização para obter a previsão do tempo.</h5>
-    </div>
-
-    <div title="Resume" id="profile" class="m-2 shadow p-3 bg-white rounded text-center">
-        <img id="photo" src="//avatars3.githubusercontent.com/u/30278115" class="rounded-circle" alt="Foto de Perfil" style="max-width: 200px;">
-        <h1>Lucas Costa Santos</h1>
-        <p class="text-secondary">Compartilhe conhecimento com as pessoas.</p>
-        <hr>
-        <div class="ml-5 mr-5">
-            <p class="text-justify">Engenheiro de Computação pela Universidade Federal do Ceará (UFC) - Campus Sobral, concluindo em 2020.
-                Possui certificação técnica em Redes de Computadores pela EEEP Marta Maria Giffoni de Sousa, finalizando em 2014.
-                Integrou o Programa de Educação Tutorial (PET) do curso de Engenharia de Computação da UFC, onde desenvolveu atividades de monitoria, extensão e pesquisa, principalmente na área de Aprendizado de Máquina e Internet das Coisas.
-                Desenvolveu, ao final do curso, um aparelho capaz de classificar cores e cédulas do Real brasileiro a partir de um sensor de cores caseiro, a fim de auxiliar os deficientes visuais em seu dia a dia.
-                De 2019 a 2020 foi estagiário de Operações de TI e de 2020 a 2023 fez parte da equipe de Gestão de Ativos de TI da Votorantim Cimentos, gerenciando a equipe e os processos relacionados aos ativos de TI da companhia.
-                Atualmente compõe o time de desenvolvimento SAP ABAP da COINOV, prestando consultoria a várias outras empresas com manutenção e desenvolvimento de soluções SAP ECC, SAP4HANA e SAP BW.
-            </p>
-        </div>
-    </div>
-    
-    <div title="Education" id="education" class="m-2 shadow p-3 bg-white rounded">
-        <h3 class="text-center">Formação</h3><hr>
-        <div class="container">
-            <table class="table table-responsive table-borderless table-striped">
-                <tbody>
-                    <tr>
-                        <td>2015 - 2020</td>
-                        <td>Engenharia de Computação na Universidade Federal do Ceará (UFC - Campus Sobral)</td>
-                    </tr>
-                    <tr>
-                        <td>2012 - 2014</td>
-                        <td>Curso técnico profissionalizante em Redes de Computadores na EEEP Marta Maria Giffoni de Sousa</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    
-    <div title="Interesting and Complementary Education" id="interesting" class="m-2 shadow p-3 bg-white rounded">
-        <h3 class="text-center">Interesses e Formação Complementar</h3><hr>
-        <ul class="list-inline text-center text-monospace font-weight-bold">
-            <li class="list-inline-item">Programação</li>
-            <li class="list-inline-item">Análise de dados</li>
-            <li class="list-inline-item">Aprendizagem de máquina</li>
-            <li class="list-inline-item">Internet das Coisas</li>
-        </ul>
-        <div class="container">
-            <table class="mt-5 table table-responsive table-borderless table-striped">
-                <tbody>
-                    <tr>
-                        <td>2023</td>
-                        <td><strong>Academia SAP BW</strong>. SAP Press</td>
-                        <td>80h/a</td>
-                    </tr>
-                    <tr>
-                        <td>2023</td>
-                        <td><strong>Academia SAP ABAP</strong>. GPLUX Treinamento SAP</td>
-                        <td>80h/a</td>
-                    </tr>
-                    <tr>
-                        <td>2023</td>
-                        <td><strong>SAP ABAP</strong>. KA Solution</td>
-                        <td>2h/a</td>
-                    </tr>
-                    <tr>
-                        <td>2021</td>
-                        <td><strong>Proteção de Dados com Lei Geral de Proteção de Dados (LGPD) e as mudanças com o Marco Civil da Internet (MCI)</strong>. ESPM</td>
-                        <td>2h/a</td>
-                    </tr>
-                    <tr>
-                        <td>2021</td>
-                        <td><strong>Microsoft Azure AI Fundamentals (AI‐900)</strong>. KA Solution</td>
-                        <td>8h/a</td>
-                    </tr>
-                    <tr>
-                        <td>2019</td>
-                        <td>Curso de <strong>JavaScript</strong> e <strong>ECMAScript</strong>. Curso em vídeo</td>
-                        <td>10h/a</td>
-                    </tr>
-                    <tr>
-                        <td>2019</td>
-                        <td>Curso de <strong>Python 3</strong>. Estruturas Compostas. Curso em vídeo</td>
-                        <td>40h/a</td>
-                    </tr>
-                    <tr>
-                        <td>2018</td>
-                        <td>Machine Learning e Data Science com <strong>Python</strong> de A-Z. Udemy</td>
-                        <td>30h/a</td>
-                    </tr>
-                    <tr>
-                        <td>2018</td>
-                        <td><strong>Git</strong> e <strong>Github</strong> para iniciantes. Udemy</td>
-                        <td>2h/a</td>
-                    </tr>
-                    <tr>
-                        <td>2018</td>
-                        <td>Curso de <strong>Python 3</strong>. Estruturas de Controle. Curso em vídeo</td>
-                        <td>40h/a</td>
-                    </tr>
-                    <tr>
-                        <td>2018</td>
-                        <td>Curso de <strong>Python 3</strong>. Fundamentos. Curso em vídeo</td>
-                        <td>40h/a</td>
-                    </tr>
-                    <tr>
-                        <td>2018</td>
-                        <td>Curso de <strong>Java</strong>. Curso em vídeo</td>
-                        <td>40h/a</td>
-                    </tr>
-                    <tr>
-                        <td>2018</td>
-                        <td>Curso de POO em <strong>Java</strong>. Curso em vídeo</td>
-                        <td>40h/a</td>
-                    </tr>
-                    <tr>
-                        <td>2017</td>
-                        <td>Sistema de NFe e NFCe (<strong>Java</strong>). Udemy</td>
-                        <td>6h/a</td>
-                    </tr>
-                    <tr>
-                        <td>2012</td>
-                        <td>Curso Inicial de <strong>Java</strong>. CENTEC</td>
-                        <td>40h/a</td>
-                    </tr>
-                    <tr>
-                        <td>2012</td>
-                        <td>Curso Inicial de <strong>Web Design</strong>. CENTEC</td>
-                        <td>40h/a</td>
-                    </tr>
-                    <tr>
-                        <td>2012</td>
-                        <td>Curso de <strong>Empreendedorismo e Plano de Negocios</strong>. SEBRAE</td>
-                        <td>60h/a</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    
-    <div title="Repositories" id="repositories" class="m-2 shadow p-3 bg-white rounded text-center">
-        <h3>Repositórios</h3><hr>
-        <iframe id="ghcard-lucas26xd" frameborder="0" scrolling="0" allowtransparency="true" src="//cdn.jsdelivr.net/github-cards/1.0.2/cards/default.html?user=lucas26xd&amp;identity=ghcard-lucas26xd" width="400" height="150"></iframe>
-        <p class="text-secondary">Meus 5 últimos repositórios no GitHub</p>
-        <!--Here is the code generated by JQuery-->
-    </div>
-    
-    <div title="Contact" id="contact" class="m-2 shadow p-3 bg-white rounded text-center">
-        <h3>Contato</h3>
-        <span class="text-secondary"><a title="Send me an email" href="mailto:lucas.lcs.eng@gmail.com"><i class="mdi mdi-email"></i> lucas.lcs.eng@gmail.com</a></span>
-        <hr>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <form action="//formspree.io/lucas.lcs.eng@gmail.com" method="POST">
-                        <input type="hidden" name="_subject" value="Mensagem enviada pelo site">
-                        <div class="form-group  text-left">
-                            <label for="email">Email</label>
-                            <input title="Your email" type="email" name="_replyto" class="form-control" id="email" placeholder="Seu email" required>
-                        </div>
-                        <div class="form-group text-left">
-                            <label for="message">Mensagem</label>
-                            <textarea title="Message" name="message" class="form-control" id="message" rows="3" placeholder="Sua mensagem" aria-describedby="emailMsg" required></textarea>
-                            <small id="emailMsg" class="form-text text-secondary">Estou usando o servidor de email da Formspree, verificação captcha será necessária.</small>
-                        </div>
-                        <div class="form-group text-right">
-                            <button title="Submit" type="submit" class="btn btn-primary">Enviar</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="mt-3"><hr></div>
-            <div class="row">
-                <div class="col-3">
-                    <a title="Visit me on GitHub" href="//github.com/lucas26xd" target="_blank" rel="noopener noreferrer">
-                        <div class="text-center" id="github-icon">
-                            <i class="p-2 rounded-circle mdi mdi-github-circle mdi-contacts"></i>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-3">
-                    <a title="Conect me on LinkedIn" href="//linkedin.com/in/lucas26xd/" target="_blank" rel="noopener noreferrer">
-                        <div class="text-center" id="linkedin-icon">
-                            <i class="p-2 rounded-circle mdi mdi-linkedin mdi-contacts"></i>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-3">
-                    <a  title="Contact me on Telegram" href="//t.me/Aidimin" target="_blank" rel="noopener noreferrer">
-                        <div class="text-center" id="telegram-icon">
-                            <i class="p-2 rounded-circle mdi mdi-telegram mdi-contacts"></i>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-3">
-                    <a title="Follow me on Instagram" href="//instagram.com/lucascs.gif/" target="_blank" rel="noopener noreferrer">
-                        <div class="text-center" id="instagram-icon">
-                            <i class="p-2 rounded-circle mdi mdi-instagram mdi-contacts"></i>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <footer class="text-center text-secondary">&copy; Lucas Costa Santos. <span id="year"></span>. Find the code of this page <a title="Repo" href="//github.com/lucas26xd/lucas26xd.github.io">here</a>.</footer>
-    
-    <!-- JQuery -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!--Bootstrap JavaScript-->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    
-    <script>
-        getLocation() //Requests user geolocation
-
-        $("div.shadow").hide()
-        
-        $.getJSON('//api.github.com/users/lucas26xd', res => {$('#photo').attr('src', res.avatar_url)}) // Get the avatar in GitHub
-
-        Array.from($(".nav-item")).forEach(elem => {  // Add event to enable menu item on click
-            elem.addEventListener("click", () => {
-                $('.nav-item.active').removeClass("active") // Remove the active class of the menu item that were previously
-                this.className += " active" // Active the menu item
-            });
-        });
-        
-        var time = 600
-        $("div.shadow").first().show(time, function showNext() { //Show divs
-            time -= 100
-            $(this).next("div.shadow").show(time, showNext)
-        });
-        
-        $('#year').text(new Date().getFullYear()) // The year in footer
-        
-        $(document).scroll(() => { // Activate menus according to page scrolling
-            if ($(this).scrollTop() >= $('#profile').position().top - 80 && $(this).scrollTop() <= $('#education').position().top - 80) {
-                $('.nav-item.active').removeClass("active")
-                $('#nav-item-0').addClass("active")
-            } else if ($(this).scrollTop() >= $('#education').position().top - 80 && $(this).scrollTop() <= $('#interesting').position().top - 80) {
-                $('.nav-item.active').removeClass("active")
-                $('#nav-item-1').addClass("active")
-            } else if ($(this).scrollTop() >= $('#interesting').position().top - 80 && $(this).scrollTop() <= $('#repositories').position().top - 80) {
-                $('.nav-item.active').removeClass("active")
-                $('#nav-item-2').addClass("active")
-            } else if ($(this).scrollTop() >= $('#repositories').position().top - 80) {
-                $('.nav-item.active').removeClass("active")
-                $('#nav-item-3').addClass("active")
-            }
-            if ($(this).scrollTop() >= ($(document).height() - $(window).height())) {
-                $('.nav-item.active').removeClass("active")
-                $('#nav-item-4').addClass("active")
-            }
-        })
-        
-        $.getJSON('//api.github.com/users/lucas26xd/repos', {sort: 'pushed'}, response => { // Request GitHub API to get information from my repositories
-            $.getJSON('//raw.githubusercontent.com/ozh/github-colors/master/colors.json', lang_colors => { //Get GitHub language colors. Many thanks to https://github.com/ozh/github-colors
-                var result = response.filter(r => {if(r.language != null) return r}) // Remove the repos without language defined
-                result.slice(0, 5).forEach(repo => {
-                    try {
-                        $('#repositories').append(`<div class="text-left bg-light p-1">
-                            <h4><a title="🔄 ${new Date(repo.pushed_at).toLocaleDateString('pt-BR', {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'})}" style="font-size: 1.1rem;" href="${repo.html_url}">
-                                <img class="mr-1" src="//octicons.github.com/favicon.ico" alt="" width="20px"> lucas26xd / <strong>${repo.name}</strong></a></h4>
-                                <p class="text-secondary">${repo.description}</p>
-                                <p class="text-secondary" style="font-size: 0.8rem;"><span style="background-color: ${lang_colors[repo.language].color}; border-radius:50%; display:inline-block; height:12px; position:relative; top:1px; width:12px"></span> ${repo.language}</p>
-                            </div>`
-                        )
-                    } catch (error) {}
-                })
-            })
-        })
-            
-        document.addEventListener('touchleave', hideNavBAr)
-        document.addEventListener('click', hideNavBAr)
-        
-        function hideNavBAr() { // Hide the mebu bar
-            if(!$('.navbar-toggler').hasClass('collapsed')){
-                $('.navbar-collapse').collapse('hide')
-            }
-        }
-
-        function getLocation() {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(showPosition, showError)
-            } else {
-                $('#weather').text('Seu navegador não suporta Geolocalização.')
-                removeWeather()
-            }
-        }
-
-        function removeWeather() {
-            $('#weather').removeClass('bg-info')
-            $('#weather').addClass('bg-danger')
-            setTimeout(() => {
-                $('#weather').remove()
-                $('#profile').addClass('mt-5')
-            }, 3000)
-        }
-
-        function showPosition(position) {
-            $('#weather').addClass('d-none')
-            $('#profile').addClass('mt-5')
-            $.ajax(`//servicos.cptec.inpe.br/XML/cidade/7dias/${position.coords.latitude}/${position.coords.longitude}/previsaoLatLon.xml`, {dataType: 'xml'}).done(xml => {
-                xml = $(xml).find('cidade')
-                const cid = xml.find('nome').text()
-                const uf = xml.find('uf').text()
-                const previsao = $(xml.find('previsao')[0])
-                const dia = new Date(previsao.find('dia').text()).toLocaleDateString('pt-BR', {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'})
-                const max = previsao.find('maxima').text()
-                const min = previsao.find('minima').text()
-                var tempo = {'ec': '🌦 Encoberto com Chuvas Isoladas', 'ci': '☔️ Chuvas Isoladas', 'c': '🌧 Chuva', 'in': '☁️ Instável', 'pp': '☔️ Possibilidade de Pancadas de Chuva', 'cm': '☔️ Chuva pela Manhã', 
-                            'cn': '☔️ Chuva à Noite', 'pt': '⛅️ Pancadas de Chuva à Tarde', 'pm': '⛅️ Pancadas de Chuva pela Manhã', 'np': '🌦 Nublado e Pancadas de Chuva', 'pc': '⛈ Pancadas de Chuva', 
-                            'pn': '⛅️ Parcialmente Nublado', 'cv': '☔️ Chuvisco', 'ch': '🌧 Chuvoso', 't': '🌧⚡️ Tempestade', 'ps': '☀️ Predomínio de Sol', 'e': '⛅️ Encoberto', 'n': '⛅️ Nublado', 'cl': '☀️ Céu Claro', 
-                            'nv': '🌨 Nevoeiro', 'g': '🌨 Geada', 'ne': '❄️ Neve', 'nd': '🚫 Não Definido', 'pnt': '⛈ Pancadas de Chuva à Noite', 'psc': '🌦 Possibilidade de Chuva', 'pcm': '🌦 Possibilidade de Chuva pela Manhã', 
-                            'pct': '🌦 Possibilidade de Chuva à Tarde', 'pcn': '🌧 Possibilidade de Chuva à Noite', 'npt': '🌦 Nublado com Pancadas à Tarde', 'npn': '🌦 Nublado com Pancadas à Noite','ncn': '🌧 Nublado com Possibilidade de Chuva à Noite', 
-                            'nct': '🌦 Nublado com Possibilidade de Chuva à Tarde', 'ncm': '🌦 Nublado com Possibilidade de Chuva pela Manhã', 'npm': '🌦 Nublado com Pancadas de Chuva pela Manhã', 'npp': '🌦 Nublado com Possibilidade de Chuva', 
-                            'vn': '☁️ Variação de Nebulosidade', 'ct': '🌦 Chuva à Tarde', 'ppn': '🌧 Possibilidade de Pancadas de Chuva à Noite', 'ppt': '🌦 Possibilidade de Pancadas de Chuva à Tarde', 'ppm': '🌦 Possibilidade de Pancadas de Chuva pela Manhã'}
-                tempo = tempo[previsao.find('tempo').text()]
-                    $('#weather').html(`${cid} - ${uf}, <strong>${tempo}</strong>, 🔼${max}ºC 🔽${min}ºC`)
-                    $('#weather').attr('title', `🔄${dia}`)
-                    $('#weather').removeClass('d-none')
-                    $('#profile').removeClass('mt-5')
-            })
-        }
-
-        function showError(error) {
-            switch(error.code) {
-                case error.PERMISSION_DENIED:
-                    $('#weather').text('Geolocalização rejeitada.')
-                    removeWeather()
-                    break;
-                case error.POSITION_UNAVAILABLE:
-                    $('#weather').text('Localização indisponível.')
-                    removeWeather()
-                    break;
-                case error.TIMEOUT:
-                    $('#weather').text('Tempo de requisição expirada.')
-                    removeWeather()
-                    break;
-                case error.UNKNOWN_ERROR:
-                    $('#weather').text('Algo de errado aconteceu.')
-                    removeWeather()
-                    break;
-            }
-        }
-    </script>
+<a class="skip" href="#main">Ir para o conteúdo</a>
+<header class="header"><div class="shell nav"><a class="brand" href="#inicio" aria-label="Lucas Santos, início">Lucas<b>.</b></a><button class="toggle" type="button" aria-expanded="false" aria-controls="links" aria-label="Abrir menu">☰</button><nav aria-label="Navegação principal"><ul class="links" id="links"><li><a href="#sobre">Sobre</a></li><li><a href="#experiencia">Experiência</a></li><li><a href="#formacao">Formação</a></li><li><a href="#projetos">Projetos</a></li><li><a href="#contato">Contato</a></li></ul></nav><button class="theme" type="button" aria-label="Ativar modo escuro" aria-pressed="false">◐ <span>Tema</span></button></div></header>
+<main id="main">
+<section class="hero" id="inicio"><div class="shell hero-grid"><div class="reveal"><p class="eyebrow">Desenvolvimento · Dados · Automação</p><h1>Desenvolvedor de software com vasta experiência em <em>SAP, Python e Java.</em></h1><p class="hero-copy">Sou Lucas Costa Santos e desenvolvo soluções para sistemas corporativos, dados e automação. Trabalho com SAP ABAP, SAP BW/HANA, Python e Java para conectar necessidades de negócio a software confiável.</p><div class="skills hero-skills" aria-label="Tecnologias em destaque"><span class="skill">SAP ABAP</span><span class="skill">Python</span><span class="skill">Java</span><span class="skill">SAP BW/HANA</span></div><div class="actions"><a class="button" href="#contato">Vamos conversar ↗</a><a class="button alt" href="https://github.com/lucas26xd" target="_blank" rel="noopener noreferrer">Ver GitHub ↗</a></div></div><figure class="profile reveal"><img src="https://github.com/lucas26xd.png?size=600" alt="Foto de Lucas Costa Santos" width="600" height="600"><figcaption><span>Preá, CE</span><span>Aberto a conexões</span></figcaption></figure></div></section>
+<section class="section" id="sobre"><div class="shell about"><div><div class="heading"><h2>Sobre mim</h2></div><p class="about-copy">Minha trajetória combina desenvolvimento, dados e operação de tecnologia. Hoje atuo no time SAP ABAP e BW/HANA da COINOV, prestando consultoria e desenvolvendo soluções para diferentes empresas. Antes disso, trabalhei com gestão de ativos de TI e processos corporativos na Votorantim Cimentos.</p><div class="skills" aria-label="Principais tecnologias"><span class="skill">SAP ABAP</span><span class="skill">SAP BW</span><span class="skill">S/4HANA</span><span class="skill">Python</span><span class="skill">Java</span><span class="skill">JavaScript</span><span class="skill">Dados</span><span class="skill">Git</span></div></div><div class="stats" aria-label="Resumo profissional"><div class="stat"><strong>3+</strong><span>anos em desenvolvimento SAP</span></div><div class="stat"><strong>12+</strong><span>anos de prática em tecnologia</span></div><div class="stat"><strong>5</strong><span>áreas de conhecimento conectadas</span></div><div class="stat"><strong>1</strong><span>objetivo: entregar valor com simplicidade</span></div></div></div></section>
+<section class="section" id="experiencia"><div class="shell"><div class="heading"><h2>Experiência</h2><p>Uma carreira construída entre operações, processos e desenvolvimento de software.</p></div><div class="timeline"><article class="timeline-item"><div class="year">2023 — hoje</div><div><h3>Desenvolvedor SAP ABAP, SAP BW e SAP HANA · COINOV</h3><p>Manutenção e desenvolvimento de soluções em SAP ECC, SAP S/4HANA e SAP BW, atuando em projetos de consultoria.</p></div></article><article class="timeline-item"><div class="year">2020 — 2023</div><div><h3>Gestão de Ativos de TI · Votorantim Cimentos</h3><p>Gestão de equipe, processos e ativos de tecnologia, com foco em organização, governança e eficiência operacional.</p></div></article><article class="timeline-item"><div class="year">2019 — 2020</div><div><h3>Operações de TI · Votorantim Cimentos</h3><p>Estágio voltado à operação e suporte de serviços de tecnologia da informação.</p></div></article></div></div></section>
+<section class="section" id="formacao"><div class="shell"><div class="heading"><h2>Formação</h2><p>Base acadêmica e aprendizado contínuo para resolver problemas reais.</p></div><div class="timeline"><article class="timeline-item"><div class="year">2015 — 2020</div><div><h3>Engenharia de Computação · UFC</h3><p>Universidade Federal do Ceará, Campus Sobral. Pesquisa, extensão e monitoria em aprendizado de máquina e Internet das Coisas.</p></div></article><article class="timeline-item"><div class="year">2012 — 2014</div><div><h3>Técnico em Redes de Computadores</h3><p>EEEP Marta Maria Giffoni de Sousa.</p></div></article></div><div class="certs" style="margin-top:2rem"><article class="cert"><time>2023</time><h3>Academia SAP BW</h3><p>SAP Press · 80h/a</p></article><article class="cert"><time>2023</time><h3>Academia SAP ABAP</h3><p>GPLUX Treinamento SAP · 80h/a</p></article><article class="cert"><time>2021</time><h3>Microsoft Azure AI Fundamentals (AI-900)</h3><p>KA Solution · 8h/a</p></article><article class="cert"><time>2018 — 2019</time><h3>Python, Java, JavaScript e Machine Learning</h3><p>Cursos em vídeo e Udemy</p></article></div></div></section>
+<section class="section" id="projetos"><div class="shell"><div class="heading"><h2>Projetos no GitHub</h2><p>Uma seleção automatizada dos meus repositórios públicos.</p></div><div class="repos" id="repo-list"><p class="status">Carregando repositórios...</p></div></div></section>
+<section class="section" id="contato"><div class="shell contact"><div class="contact-panel"><p class="eyebrow">Contato</p><h2>Vamos trocar uma ideia?</h2><p>Estou aberto a conversas sobre tecnologia, SAP, dados e oportunidades profissionais.</p><div class="contact-links"><a href="mailto:lucas.lcs.eng@gmail.com">✉ lucas.lcs.eng@gmail.com</a><a href="https://linkedin.com/in/lucas26xd/" target="_blank" rel="noopener noreferrer">↗ LinkedIn</a><a href="https://github.com/lucas26xd" target="_blank" rel="noopener noreferrer">↗ GitHub</a><a href="https://t.me/Aidimin" target="_blank" rel="noopener noreferrer">↗ Telegram</a></div></div><form class="form" action="https://formspree.io/lucas.lcs.eng@gmail.com" method="POST"><label for="email">Seu e-mail<input id="email" name="_replyto" type="email" autocomplete="email" placeholder="voce@exemplo.com" required></label><label for="message">Mensagem<textarea id="message" name="message" placeholder="Como posso ajudar?" required></textarea></label><input type="hidden" name="_subject" value="Mensagem enviada pelo portfólio de Lucas Santos"><button class="button" type="submit">Enviar mensagem ↗</button></form></div></section>
+</main>
+<footer class="shell">© Lucas Costa Santos · <span id="year"></span> · Código desta página no <a href="https://github.com/lucas26xd/lucas26xd.github.io" target="_blank" rel="noopener noreferrer">GitHub</a>.</footer>
+<script>
+const root=document.documentElement,theme=document.querySelector('.theme'),toggle=document.querySelector('.toggle'),links=document.querySelector('.links');
+const saved=localStorage.getItem('theme'); if(saved==='dark'||(!saved&&matchMedia('(prefers-color-scheme: dark)').matches)){root.dataset.theme='dark';theme.setAttribute('aria-pressed','true');theme.setAttribute('aria-label','Ativar modo claro')}
+theme.addEventListener('click',()=>{const dark=root.dataset.theme!=='dark';root.dataset.theme=dark?'dark':'light';localStorage.setItem('theme',dark?'dark':'light');theme.setAttribute('aria-pressed',String(dark));theme.setAttribute('aria-label',dark?'Ativar modo claro':'Ativar modo escuro')});
+toggle.addEventListener('click',()=>{const open=links.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Fechar menu':'Abrir menu')});
+links.addEventListener('click',event=>{if(event.target.matches('a')){links.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Abrir menu')}});
+const sections=document.querySelectorAll('main section[id]'),navLinks=document.querySelectorAll('.links a'); const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting)navLinks.forEach(link=>link.classList.toggle('active',link.getAttribute('href')===`#${entry.target.id}`))}),{rootMargin:'-30% 0px -60% 0px'}); sections.forEach(section=>observer.observe(section));
+document.querySelector('#year').textContent=new Date().getFullYear();
+const repoList=document.querySelector('#repo-list'),colors={JavaScript:'#f1e05a',Python:'#3572A5',Java:'#b07219',HTML:'#e34c26',CSS:'#563d7c',ABAP:'#E8274B'};
+async function loadRepositories(){try{const response=await fetch('https://api.github.com/users/lucas26xd/repos?sort=pushed&per_page=30');if(!response.ok)throw new Error(`GitHub respondeu ${response.status}`);const repos=(await response.json()).filter(repo=>repo.language).slice(0,6);if(!repos.length)throw new Error('Nenhum repositório disponível');repoList.replaceChildren();repos.forEach(repo=>{const card=document.createElement('article');card.className='repo';const title=document.createElement('h3'),link=document.createElement('a');link.href=repo.html_url;link.target='_blank';link.rel='noopener noreferrer';link.textContent=repo.name;title.append(link);const description=document.createElement('p');description.textContent=repo.description||'Repositório sem descrição.';const meta=document.createElement('div');meta.className='repo-meta';const language=document.createElement('span');language.className='language';language.style.setProperty('--language-color',colors[repo.language]||'#d85b3f');language.textContent=repo.language;const stars=document.createElement('span');stars.textContent=`★ ${repo.stargazers_count}`;meta.append(language,stars);card.append(title,description,meta);repoList.append(card)})}catch(error){repoList.replaceChildren();const status=document.createElement('p');status.className='status';status.textContent='Não foi possível carregar os repositórios agora. Veja todos diretamente no GitHub.';const link=document.createElement('a');link.href='https://github.com/lucas26xd?tab=repositories';link.target='_blank';link.rel='noopener noreferrer';link.textContent=' Abrir GitHub ↗';status.append(link);repoList.append(status);console.warn('Falha ao carregar repositórios:',error)}}
+loadRepositories();
+</script>
 </body>
 </html>
